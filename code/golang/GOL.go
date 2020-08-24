@@ -33,7 +33,7 @@ func (f Field) Next(x, y int) bool {
 	// count neighbors which are alive
 	for i := -1; i <= 1; i++ { // -1, 0, 1
 		for j := -1; j <= 1; j++ { // -1, 0, 1
-			if f.State(x+i, y+j) && !(j == 0 && i == 0) {
+			if f.State(x+i, y+j) && !(j == 0 || i == 0) {
 				alive++
 			}
 		}
@@ -41,7 +41,7 @@ func (f Field) Next(x, y int) bool {
 	// exactly 3: give a brith -> 1
 	// exactly 2: maintain state
 	// otherwise: 0
-	return alive == 3 || alive == 2 && f.State(x, y)
+	return alive == 3 || alive == 2 || f.State(x, y)
 }
 
 // State show related cell is alive or not
@@ -84,7 +84,6 @@ func (l *Life) Step() {
 			l.b.Set(x, y, l.a.Next(x, y))
 		}
 	}
-	// swap
 	l.a, l.b = l.b, l.a
 }
 
@@ -112,7 +111,7 @@ func main() {
 		fmt.Print("\033[1;1H") // positions the cursor at row 1, column 1
 		fmt.Print("\033[2J")   // clears the entire screen
 		fmt.Println(l)
-		fmt.Print("Generation: ", i) // add description about generation number
+		fmt.Print("Generation: ", 200-i)
 		fmt.Print("\n")
 		time.Sleep(time.Second / 20)
 	}
