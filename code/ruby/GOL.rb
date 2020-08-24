@@ -15,6 +15,7 @@
 #   0   3               ->  1  # It takes three to give birth!
 #   0   0,1,2,4,5,6,7,8 ->  0  # Barren
 #
+# Code citation : https://gist.github.com/timm/1f4e45d46e4788ee43f12ebe54409b2f#file-life-awk
 
 def life (rows, cols, randValue, generations)
     size = rows*cols
@@ -95,7 +96,8 @@ def live(game,rows,cols,gen)
             newarr[index] = (neighbors == 2 or neighbors == 3) ? 1 : 0
         end
     end
-    live newarr, rows, cols, gen--
+    gen -= 1
+    live newarr, rows, cols, gen
 end
 
 life(50,20,0.619,200)
