@@ -39,4 +39,4 @@ coverage.xml
 .idea
 
 # Swift
-code/swift/GOL/.build/
+code/swift/.build/
