@@ -51,11 +51,7 @@ func live(a: [Int], rows: Int, gen: Int) {
     var neighbours = getValue(array: a, index: c-1) + getValue(array: a, index: c+1)
     neighbours += getValue(array: a, index: c-rows-1) + getValue(array: a, index: c-rows) + getValue(array: a, index: c-rows+1)
     neighbours += getValue(array: a, index: c+rows-1) + getValue(array: a, index: c+rows) + getValue(array: a, index: c+rows+1)
-    if a[c] == 0 {
-      b.append(neighbours == 3 ? 1 : 0)
-    } else {
-      b.append(neighbours == 2 || neighbours == 3 ? 1 : 0)
-    }
+    b.append(neighbours == 2 || neighbours == 3 ? 1 : 0)
   }
   live(a: b, rows: rows, gen: gen-1)
 }
