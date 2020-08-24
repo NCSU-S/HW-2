@@ -2,7 +2,7 @@
 The [Game of Life](http://rosettacode.org/wiki/Conway%27s_Game_of_Life#Swift) is a   cellular automaton   devised by the British mathematician   John Horton Conway   in 1970.   It is the best-known example of a cellular automaton.
 
 ### Goal
-We will offer three versions of GOF code in different languages (Go, Swift, Dart).
+We will offer three versions of GOF code in different languages (Go, Swift, Ruby).
 
 Then introduce a same bug into three version's codes.
 
