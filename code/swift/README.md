@@ -5,7 +5,7 @@ For macOS or Linux:
 
 For Windows:
 
-[Swift for Windows](https://swiftforwindows.github.io/)
+[Cross-platform Compiler Download](https://elementscompiler.com/elements/download.aspx)
 
 ## How to run
 `$ swift build`
