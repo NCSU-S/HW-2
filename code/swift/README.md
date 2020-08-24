@@ -1,3 +1,9 @@
-# swift
+## Download Swift
+Swift doesn't support Windows, so if you are not in macOS, please download Swift in Linux.
 
-A description of this package.
+[Swift Download](https://swift.org/download/)
+
+## How to run
+`$ swift build`
+
+`$ swift run`
