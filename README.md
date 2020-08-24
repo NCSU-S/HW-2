@@ -1,7 +1,7 @@
 <p align="center">
 <img src="https://img.shields.io/badge/language-swift-orange.svg">
 <img src="https://img.shields.io/badge/language-golang-blue.svg">
-<img src="https://img.shields.io/badge/language-ruby-red.svg">
+<img src="https://img.shields.io/badge/language-ruby-brown.svg">
 <img alt="GitHub" src="https://img.shields.io/github/license/NCSU-S/game-of-life">
 </p> 
 
