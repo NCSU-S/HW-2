@@ -1,3 +1,10 @@
+<p align="center">
+<img src="https://img.shields.io/badge/language-swift-orange.svg">
+<img src="https://img.shields.io/badge/language-golang-blue.svg">
+<img src="https://img.shields.io/badge/language-ruby-red.svg">
+<img alt="GitHub" src="https://img.shields.io/github/license/NCSU-S/game-of-life">
+</p> 
+
 # Game of Life
 The [Game of Life](http://rosettacode.org/wiki/Conway%27s_Game_of_Life#Swift) is a   cellular automaton   devised by the British mathematician   John Horton Conway   in 1970.   It is the best-known example of a cellular automaton.
 
