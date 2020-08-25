@@ -3,6 +3,7 @@
 <img src="https://img.shields.io/badge/language-golang-blue.svg">
 <img src="https://img.shields.io/badge/language-ruby-brown.svg">
 <img alt="GitHub" src="https://img.shields.io/github/license/NCSU-S/game-of-life">
+<a href="https://zenodo.org/badge/latestdoi/287827611"><img src="https://zenodo.org/badge/287827611.svg" alt="DOI"></a>
 </p> 
 
 # Game of Life
