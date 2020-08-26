@@ -48,15 +48,15 @@ func live(a: [Int], rows: Int, gen: Int) {
   }
   var b = [Int]()
   for c in 0..<a.count {
-    var neighbours = getValue(array: a, index: c-1) + getValue(array: a, index: c+1)
-    neighbours += getValue(array: a, index: c-rows-1) + getValue(array: a, index: c-rows) + getValue(array: a, index: c-rows+1)
-    neighbours += getValue(array: a, index: c+rows-1) + getValue(array: a, index: c+rows) + getValue(array: a, index: c+rows+1)
+    var neighbours = getValue(a, c-1) + getValue(a, c+1)
+    neighbours += getValue(a, c-rows-1) + getValue(a, c-rows) + getValue(a, c-rows+1)
+    neighbours += getValue(a, c+rows-1) + getValue(a, c+rows) + getValue(a, c+rows+1)
     b.append(neighbours == 2 || neighbours == 3 ? 1 : 0)
   }
   live(a: b, rows: rows, gen: gen-1)
 }
 
-func getValue(array: [Int], index: Int) -> Int {
+func getValue(_ array: [Int],_ index: Int) -> Int {
   if index < 0 || index >= array.count {
     return 0
   } else {
