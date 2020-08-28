@@ -47,7 +47,7 @@ func live(a: [Int], rows: Int, gen: Int) {
     }
   }
   var b = [Int]()
-  for c in 0..<a.count {
+  for c in 0...a.count {
     var neighbours = getValue(a, c-1) + getValue(a, c+1)
     neighbours += getValue(a, c-rows-1) + getValue(a, c-rows) + getValue(a, c-rows+1)
     neighbours += getValue(a, c+rows-1) + getValue(a, c+rows) + getValue(a, c+rows+1)
@@ -57,11 +57,7 @@ func live(a: [Int], rows: Int, gen: Int) {
 }
 
 func getValue(_ array: [Int],_ index: Int) -> Int {
-  if index < 0 || index >= array.count {
-    return 0
-  } else {
-    return array[index]
-  }
+  return array[index]
 }
 
 func sleep() {usleep(100000)}
