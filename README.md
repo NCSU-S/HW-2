@@ -17,3 +17,7 @@ Then introduce a same bug into three version's codes.
 Finally, conduct a 10-people experiment about evaluation of the quickest debugging time among these three languages.
 
 The language with quickest debugging time will be the best language in this experiment.
+
+### Conclusion
+
+Experiment results and conclusions can be found in RESULTS.md
