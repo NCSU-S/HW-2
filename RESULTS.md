@@ -15,10 +15,8 @@
 
 ### Threats to Validity
 
-Insuffient data collections since we did not provide tests to help testers debug.
-
-Next time we won't randomly generate the initial states of Game of Life, 
-instead, we will give a specific initial state and corresponding tests so that testers may have a better experience of debugging.
+* We did not provide tests to help testers debug. Next time we won't randomly generate the initial states of Game of Life, 
+  instead, we will give a specific initial state and corresponding tests so that testers may have a better experience of debugging.
 
 
 
