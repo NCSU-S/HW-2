@@ -8,6 +8,9 @@
 * Languages: Golang, Swift, Ruby
 
 ### Materials
+* we have used repl for running the programs.
+* we used Zoom for the debugging sessions.
+* experiment data can be found [here](https://docs.google.com/spreadsheets/d/1rTpD41HFYTBdPIfNccqi8RLYuym_o9d0R2z7HBysICw/edit#gid=0)
 
 ### Observations
 
