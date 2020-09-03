@@ -90,11 +90,8 @@ def live(game,rows,cols,gen)
         neighbors = 0
 
         neighbors = getNeighbors(game, index, rows, cols)
-        if game[index] == 0
-            newarr[index] = (neighbors == 3) ? 1 : 0
-        else
-            newarr[index] = (neighbors == 2 or neighbors == 3) ? 1 : 0
-        end
+
+        newarr[index] = (neighbors == 2 or neighbors == 3) ? 1 : 0
     end
     gen -= 1
     live newarr, rows, cols, gen
