@@ -12,6 +12,9 @@
 ### Observations
 
 ### Conclusions
+* As the figures show that the average time needed for Go was the least compared to the other two languages like ruby and swift.
+* According to the screen recording of people during the lab session, most people sait that it is a bit hart to find bugs in swift.
+* In conclusion, we can say that Go is a better language to coding and debuging. The second one is ruby, if people learned a bit of ruby it will be easier to code and debug with it. The last one is Swift.
 
 ### Threats to Validity
 
